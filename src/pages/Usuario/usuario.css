@@ -1,0 +1,129 @@
+@import "../../index.css";
+
+
+label   
+{
+    font-size: 20px;
+    color: #4B2142;
+}
+
+/* classes */
+
+.tituloUsuario
+{
+    margin-top: 15px;
+    margin-bottom: 26px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.cadastrar
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputUsuario
+{
+    display: block;
+    width: 320px;
+    height: 58px;
+    margin-top: 9px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.btnUsuario
+{
+    margin-top: 35px;
+    background-color: #F6511D;
+    width: 180px;
+    height: 58px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 81px;
+    cursor: pointer;
+}
+
+.btnUsuario:hover
+{
+    color: black;
+}
+
+.cardUsuario
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.txtColor
+{
+    color: #4B2142;
+}
+
+.txtPadding
+{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.alinhamentoUsuario
+{
+    flex-direction: column;
+    width: 160px;
+    padding-left: 75px;
+}
+
+.alinhamentoBtnUsuario
+{
+    margin-top: -4px;
+}
+
+.btnEditar
+{
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    color: white;
+    margin-right: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnEditar:hover
+{
+    color: black;
+}
+
+.btnExcluir
+{
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnExcluir:hover
+{
+    color: white;
+}
+
+.btnPadding
+{
+    margin-top: 33px;
+}
+
+.alinhamentoBtnUsuario2
+{
+    margin-top: 34px;
+}

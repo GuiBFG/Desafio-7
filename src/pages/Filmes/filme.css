@@ -1,0 +1,146 @@
+@import "../../index.css";
+
+
+select
+{
+    width: 400px;
+    height: 58px;
+    font-size: 20px;
+    color: #4B2142;
+    padding: 5px 0px 0px 24px;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../../assets/img/seta.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.2em top 60%, 0 0;
+    background-size: 0.8em auto, 100%;
+}
+
+/* Classes */
+
+.tituloFilme
+{
+    margin-top: 21px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.logoFilme
+{
+    display: flex;
+    margin: auto;
+}
+
+.cadastroFilme
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 81px;
+}
+
+.inputFilme
+{
+    display: block;
+    width: 400px;
+    height: 58px;
+    margin-top: 21px;
+    font-size: 20px;
+    padding: 5px 0px 0px 24px;
+}
+
+.btnFilme
+{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnFilme:hover
+{
+    color: black;
+}
+
+.cardFilmes
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.alinhamentoFilme
+{
+    width: 320px;
+    flex-direction: column;
+}
+.txtPaddingFilme
+{
+    padding-top: 45px;
+}
+
+.txtPaddingFilme2
+{
+    padding-bottom: 9px ;
+}
+
+.alinhamentoBtnCard
+{
+    margin-top: 40px;
+}
+
+.btnEditarFilmes
+{
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    color: white;
+    margin-right: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnEditarFilmes:hover
+{
+    color: black;
+}
+
+.btnExcluirFilmes
+{
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnExcluirFilmes:hover
+{
+    color: white;
+}
+
+/* css Modal */
+
+.corFundoModalFilmes
+{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    right: 0;
+    left: 0; 
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}

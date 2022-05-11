@@ -1,0 +1,113 @@
+@import "../../index.css";
+
+.modalFilmes 
+{
+    width: 900px;
+    height: 449px;
+    background: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 31.4vh;
+    z-index: 10;
+    right: 33vh;
+}
+
+.alinhamentoExcluirModalFilmes 
+{
+    width: 900px;
+    height: 45px;
+    background: #9BD2DE;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px 20px 20px;
+}
+
+.excluirModalFilmes 
+{
+    background: transparent;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.excluirModalFilmes:hover 
+{
+    color: #000000
+}
+
+.cardTxtFilmes
+{
+    margin-bottom: 4.19vw;
+}
+
+.cardTxtFilmes h1 
+{
+    font-size: 40px;
+    color: #000;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.AlinhamentoInputModalFilmes
+{
+    display: flex;
+    margin-top: 42px;
+}
+
+.inputModalFilmes 
+{
+    height: 49px;
+    font-size: 20px;
+    padding: 5px 0px 0px 24px;
+}
+
+.selectModalFilmes
+{
+    width: 271px;
+    height: 49px;
+    margin-left: 20px;
+}
+
+.AlinhamentoModalFilmesSalvar
+{
+    margin-left: 20px;
+}
+
+.btnSalvarModalFilmes
+{
+    width: 120px;
+    height: 49px;
+    background-color: #F6511D;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnSalvarModalFilmes:hover
+{
+    color: #000000;
+}
+
+.footerModalFilmes 
+{
+    width: 900px;
+    background: #F6511D;
+}
+
+.show 
+{
+    display: flex;
+}
+
+.hide 
+{
+    display: none;
+}

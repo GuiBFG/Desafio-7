@@ -1,0 +1,96 @@
+@import "../../index.css";
+
+
+h1
+{
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000
+}
+
+/* classes */
+
+.textoHeader
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header
+{
+    background-color: #9BD2DE;
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+
+.alinhamentoHeader
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1050px;
+}
+
+.logoHeader
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.imgHeader
+{
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.descricao
+{
+    font-size: 25px
+}
+
+.subdescricao
+{
+    font-size: 22px;
+}
+
+.tituloLogo
+{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    color: #616162;
+}
+
+.subtituloLogo
+{
+    font-family: 'Rosarivo', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #686666;
+}
+
+.navegar
+{
+  display: flex;
+  align-items: center;
+  
+}
+
+.btnHeader
+{
+    background-color: transparent;
+    border: none;
+}
+
+.links
+{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4B2142;
+    margin-right: 44px;
+}

@@ -1,0 +1,81 @@
+@import "../../index.css";
+
+.tituloGenero
+{
+    margin-top: 32px;
+    margin-bottom: 13px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.logoGenero
+{
+    display: flex;
+    margin: auto;
+    margin-bottom: 31.5px;
+}
+
+.labelGenero
+{
+    margin-top: 31.5px;
+}
+
+.cadastroGenero
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.inputGenero
+{
+    display: block;
+    width: 400px;
+    height: 58px;
+    margin-top: 21px;
+    font-size: 20px;
+    padding: 5px 0px 0px 24px;
+}
+
+.btnGenero
+{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnGenero:hover
+{
+    color: black;
+}
+
+.cardGenero
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #4B2142;
+}
+
+.alinhamentoBtnGenero
+{
+    margin-top: -4px;
+}
+
+
+.alinhamentoBtnGenero2
+{
+    margin-top: 34px;
+}
+
+.txtGenero
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
