@@ -6,6 +6,7 @@ export const ModalFilmes = (props) => {
 
     const [select, setSelect] = useState('')
     const [genero, setGeneros] = useState([])
+    
 
     const listarGeneros = () =>
     {
@@ -20,14 +21,17 @@ export const ModalFilmes = (props) => {
     }, [])
 
     const [nomeFilmes, setNomeFilmes] = useState('');
-
+    const [show , setNomeShow] = useState (false)
+    
     const EditarFilmes = (id, idFilmes) => {
 
-        console.log(props);
+        if(nomeFilmes === '' || select === '') {
+            setNomeShow(true)
+            return
+        }
         
         if(select === '')
         {
-            console.log(select);
             let armazenarID = props.id
 
             apiFilmes.put(`Genero/${id}/Filmes/${idFilmes}`, {Filmes: nomeFilmes, id:armazenarID})
@@ -35,7 +39,6 @@ export const ModalFilmes = (props) => {
 
         else
         {
-            console.log(select);
             apiFilmes.put(`Genero/${id}/Filmes/${idFilmes}`, {Filmes: nomeFilmes, id:select})
 
             .then(() => {
@@ -67,7 +70,7 @@ export const ModalFilmes = (props) => {
                     className="inputModalGenero" 
                     defaultValue={nomeFilmes}
                     onChange={(e) => setNomeFilmes(e.target.value)}/>
-
+    
                     <div>
                         <select value={select} className="selectModalFilmes" required onChange={(e) => setSelect (e.target.value)}>
                             <option value="" disabled selected>Gênero</option>
@@ -86,8 +89,15 @@ export const ModalFilmes = (props) => {
                         <button className="btnSalvarModalFilmes" onClick={() => EditarFilmes(props.id, props.idFilme)}>Salvar</button>
                     </div>
 
+
                 </div>
 
+                    <div>
+                        {
+                            show &&
+                            <p className="vermelhoModalFilme">*faça alguma modificação no campo vazio</p>
+                        }
+                    </div>
             </div>
 
 

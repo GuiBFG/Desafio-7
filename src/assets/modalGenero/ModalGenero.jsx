@@ -5,13 +5,24 @@ import { apiFilmes } from "../../services/api";
 const ModalGenero = (props) => {
 
     const [nomeGenero, setNomeGenero] = useState('');
+    const [show , setNomeShow] = useState (false)
 
     const EditarGenero = (id) => {
-        apiFilmes.put(`Genero/${id}`, { valorGenero: nomeGenero })
 
-        .then(() => {
-            window.location.reload()
-        })
+        if(nomeGenero !== '') {
+
+            apiFilmes.put(`Genero/${id}`, { valorGenero: nomeGenero })
+
+            .then(() => {
+                window.location.reload()
+            })
+        }
+
+        else{
+            setNomeShow(true)
+        }
+
+        
 
     }
     
@@ -42,10 +53,18 @@ const ModalGenero = (props) => {
                         defaultValue={nomeGenero}
                         onChange={(e) => setNomeGenero(e.target.value)}/>
 
+
                         <div className="AlinhamentoModalSalvar">
                             <button className="btnSalvarModalGenero" onClick={() => EditarGenero(props.id)}>Salvar</button>
                         </div>
 
+                    </div>
+
+                    <div>
+                        {
+                            show &&
+                            <p className="vermelhoModalGenero">*faça alguma modificação</p>
+                        }
                     </div>
 
                 </div>

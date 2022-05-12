@@ -8,6 +8,8 @@ import imgFilmes from "../../assets/img/cinema 1.png"
 
 import "./filme.css";
 
+import Swal from 'sweetalert2'
+
 import { apiFilmes } from "../../services/api";
 
 import ModalFilmes from "../../assets/modalFilmes/ModalFilmes";
@@ -68,19 +70,32 @@ const Filmes = () => {
 
     const Cadastrar = (id) => {
         
-           
+        if(nomeGenre !== ''){
+
             apiFilmes.post(`Genero/${id}/Filmes`, {Filmes : nomeGenre})
 
             .then(() => {
-                
+                    
                 setNomeFilmes('')
-                
+                    
             })
-    
+        
             .then(() => {
                 window.location.reload()
             })
-        
+        }
+
+        else{
+            Swal.fire({
+                title: 'Preencha os campos vazios!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#41B8D2',
+                cancelButtonColor: '#F6511D',
+                confirmButtonText: 'OK'
+              })
+        }
+
     }
 
 
@@ -130,7 +145,8 @@ const Filmes = () => {
                         placeholder="Título do Filme" 
                         className="inputFilme" 
                         value={nomeGenre} 
-                        onChange={(estadoDoInput) => setNomeFilmes(estadoDoInput.target.value)}/>
+                        onChange={(estadoDoInput) => setNomeFilmes(estadoDoInput.target.value)}
+                        maxLength={25}/>
                     </div>
 
                     <ModalFilmes mostrar={modalFilmes} funcao={AbrirFecharModal} id={pegarId} idFilme={filmeID}/>

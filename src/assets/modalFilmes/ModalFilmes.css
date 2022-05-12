@@ -102,6 +102,16 @@
     background: #F6511D;
 }
 
+/* Aviso */
+
+.vermelhoModalFilme
+{
+    color: red;
+    text-align: center;
+}
+
+/* Mostrar/Esconder */
+
 .show 
 {
     display: flex;

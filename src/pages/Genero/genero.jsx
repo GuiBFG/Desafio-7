@@ -5,6 +5,8 @@ import Footer from "../../components/Footer/footer";
 
 import imgGeneros from '../../assets/img/theater.png';
 
+import Swal from 'sweetalert2'
+
 import "./genero.css";
 
 import { apiFilmes } from "../../services/api";
@@ -51,19 +53,33 @@ const Genero = (props) => {
 
     const Cadastrar = () => {
         
-           
+        if (nomeGenre !== '') {
+
             apiFilmes.post(`Genero`, { valorGenero : nomeGenre })
 
             .then(() => {
-                
-                setNomeGeneros('')
-                
+                    
+             setNomeGeneros('')
+                    
             })
-    
+        
             .then(() => {
                 window.location.reload()
             })
         
+        }
+
+        else{
+            Swal.fire({
+                title: 'Preencha o campo vazio antes!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#41B8D2',
+                cancelButtonColor: '#F6511D',
+                confirmButtonText: 'OK'
+              })
+        }
+            
     }
 
     // Modal
@@ -103,7 +119,9 @@ const Genero = (props) => {
                         <label className="labelGenero">Cadastrar Gênero</label>
                         <input type="text" placeholder="Gênero" className="inputGenero" 
                         value={nomeGenre} 
-                        onChange={(estadoDoInput) => setNomeGeneros(estadoDoInput.target.value)}/>
+                        onChange={(estadoDoInput) => setNomeGeneros(estadoDoInput.target.value)}
+                        maxLength={25}
+                        />
                     </div>
 
                     <div>

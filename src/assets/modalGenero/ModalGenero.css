@@ -113,6 +113,15 @@
     background: #F6511D;
 }
 
+/* Aviso */
+
+.vermelhoModalGenero
+{
+    color: red;
+}
+
+/* Mostrar/Esconder */
+
 .show 
 {
     display: flex;
