@@ -59,7 +59,13 @@ const Genero = (props) =>
 
             for (let i = 0; i < generos.length; i++) {
                 if (generos[i].valorGenero === nomeGenre) {
-                    window.alert ('Você não pode colocar dois gêneros iguais')
+                    
+                    Swal.fire({
+                        title: 'Esse gênero já existe!',
+                        icon: 'warning',
+                        confirmButtonColor: '#41B8D2',
+                        confirmButtonText: 'OK'
+                      })
                     return
                 }
             }
@@ -82,9 +88,7 @@ const Genero = (props) =>
             Swal.fire({
                 title: 'Preencha o campo vazio antes!',
                 icon: 'warning',
-                showCancelButton: true,
                 confirmButtonColor: '#41B8D2',
-                cancelButtonColor: '#F6511D',
                 confirmButtonText: 'OK'
               })
         }

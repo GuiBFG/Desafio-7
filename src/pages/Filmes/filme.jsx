@@ -88,9 +88,7 @@ const Filmes = () =>
             Swal.fire({
                 title: 'Preencha os campos vazios!',
                 icon: 'warning',
-                showCancelButton: true,
                 confirmButtonColor: '#41B8D2',
-                cancelButtonColor: '#F6511D',
                 confirmButtonText: 'OK'
               })
         }
