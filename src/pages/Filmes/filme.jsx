@@ -69,7 +69,7 @@ const Filmes = () =>
 
     const Cadastrar = (id) => {
         
-        if(nomeGenre !== ''){
+        if(nomeGenre !== '' && select !== 0){
 
             apiFilmes.post(`Genero/${id}/Filmes`, {Filmes : nomeGenre})
 
