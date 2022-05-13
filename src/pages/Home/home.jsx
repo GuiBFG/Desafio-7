@@ -12,7 +12,8 @@ let headerHome = {
     descricao: "Conheça nossa coletânea"
 }
 
-const Home = () => {
+const Home = () => 
+{
 
     return (
 
@@ -20,8 +21,6 @@ const Home = () => {
             <Header objeto={headerHome} />
             <main>
                 <h1 className="tituloH1">Monte sua coletânea de filmes...</h1>
-
-
 
                 <div className="alinhamentoTexto">
                     <p className="textoHome">

@@ -17,7 +17,8 @@ let headerGenero = {
     descricao: "Cadastre os gêneros dos filmes"
 }
 
-const Genero = (props) => {
+const Genero = (props) => 
+{
 
     // CRUD
 
@@ -93,6 +94,7 @@ const Genero = (props) => {
         {
             SetModal('show')
         }
+
         else
         {
             SetModal('hide')
@@ -100,7 +102,7 @@ const Genero = (props) => {
         
         setPegarId (id)  
         window.scroll({top: 
-            100,left: 0,behavior: 'smooth'});
+        100,left: 0,behavior: 'smooth'});
     }
 
     // Layout

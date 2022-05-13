@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 
@@ -14,12 +13,12 @@ import { apiFilmes } from "../../services/api";
 
 import ModalFilmes from "../../assets/modalFilmes/ModalFilmes";
 
-
 let headerFilme = {
     descricao: "Cadastre os filmes de sua preferência "
 }
 
-const Filmes = () => {
+const Filmes = () => 
+{
 
     // CRUD
 
@@ -98,7 +97,6 @@ const Filmes = () => {
 
     }
 
-
     // Modal
 
     const [pegarId , setPegarId] = useState(0)
@@ -108,11 +106,11 @@ const Filmes = () => {
     const AbrirFecharModal = (estadoAtual , id, idFilmes ) =>
     {
 
-        console.log(id, idFilmes);
         if(estadoAtual === 'hide')
         {
             SetModal('show')
         }
+
         else
         {
             SetModal('hide')
@@ -121,7 +119,7 @@ const Filmes = () => {
         setPegarId (id)
         setPegarFilmeID (idFilmes)
         window.scroll({top: 
-            100,left: 0,behavior: 'smooth'});
+        100,left: 0,behavior: 'smooth'});
 
     }
 
@@ -177,20 +175,21 @@ const Filmes = () => {
 
                             <div className="cardFilmes">
 
-                                    <div className="txtColor">
+                                <div className="txtColor">
+                                    <p></p>
+                                    <p className="txtPaddingFilme">{item.Filmes}</p>
+                                    <p></p>
+                                </div>
+
+                                <div className="txtColor">
+
+                                    <div className="alinhamentoFilme">
                                         <p></p>
-                                        <p className="txtPaddingFilme">{item.Filmes}</p>
-                                        <p></p>
-                                    </div>
-                                    <div className="txtColor">
-                                        <div className="alinhamentoFilme">
-                                            <p></p>
-                                            <p className="txtPadding" >{item.Genre.valorGenero}</p>
-                                            <p className="txtPaddingFilme2"></p>
-                                        </div>
-                                        
+                                        <p className="txtPadding" >{item.Genre.valorGenero}</p>
+                                        <p className="txtPaddingFilme2"></p>
                                     </div>
 
+                                </div>
 
                                 <div>
 
@@ -202,7 +201,6 @@ const Filmes = () => {
                                 </div>
 
                             </div>
-
 
                         )
 

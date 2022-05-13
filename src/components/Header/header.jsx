@@ -6,8 +6,6 @@ import logo from '../../assets/img/Group 2.png';
 
 import './header.css';
 
-
-
 const Header = (props) =>{
 
     return(
