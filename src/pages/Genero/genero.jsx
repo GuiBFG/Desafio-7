@@ -25,12 +25,13 @@ const Genero = (props) =>
     const [generos, setGeneros] = useState([]);
 
     const ListarGeneros = () => {
-
+        
         apiFilmes.get('Genero')
             .then(resultado => {
 
                 setGeneros(resultado.data)
             })
+        
     }
 
     useEffect(() => {
@@ -56,6 +57,13 @@ const Genero = (props) =>
         
         if (nomeGenre !== '') {
 
+            for (let i = 0; i < generos.length; i++) {
+                if (generos[i].valorGenero === nomeGenre) {
+                    window.alert ('Você não pode colocar dois gêneros iguais')
+                    return
+                }
+            }
+
             apiFilmes.post(`Genero`, { valorGenero : nomeGenre })
 
             .then(() => {
@@ -67,7 +75,7 @@ const Genero = (props) =>
             .then(() => {
                 window.location.reload()
             })
-        
+
         }
 
         else{

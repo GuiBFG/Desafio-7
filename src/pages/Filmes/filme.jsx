@@ -65,7 +65,7 @@ const Filmes = () =>
     // Cadastrar
 
     const [nomeGenre, setNomeFilmes] = useState('');
-    const [select, setSelect] = useState(1)
+    const [select, setSelect] = useState(0)
 
     const Cadastrar = (id) => {
         
