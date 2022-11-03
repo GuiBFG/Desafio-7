@@ -1,51 +1,44 @@
 @import "../../index.css";
 
-.footer
-{
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:  #F6511D;
+    background-color: #F6511D;
     height: 250px;
     margin-top: 80px;
 }
 
-.logoFooter
-{
+.logoFooter {
     margin-bottom: 90px;
 }
 
-.textoFooter
-{
+.textoFooter {
     margin-bottom: 90px;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 40px;
 }
 
-.tituloFooter
-{
+.tituloFooter {
     color: #060606;
     text-transform: uppercase;
     font-size: 30px;
 }
 
-.subtituloFooter
-{
+.subtituloFooter {
     color: #000;
     font-family: 'Rosarivo', serif;
     font-size: 18px;
 }
 
-.borda
-{
+.borda {
     margin-left: 50px;
     height: 200px;
     border-right: 1px solid white;
 }
 
-.rodape
-{
+.rodape {
     margin-left: 45px;
     font-family: "Roboto";
     color: white;

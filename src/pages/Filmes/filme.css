@@ -1,8 +1,7 @@
 @import "../../index.css";
 
 
-select
-{
+select {
     width: 400px;
     height: 58px;
     font-size: 20px;
@@ -20,30 +19,26 @@ select
 
 /* Classes */
 
-.tituloFilme
-{
+.tituloFilme {
     margin-top: 21px;
     margin-bottom: 12px;
     font-size: 24px;
     text-align: center;
 }
 
-.logoFilme
-{
+.logoFilme {
     display: flex;
     margin: auto;
 }
 
-.cadastroFilme
-{
+.cadastroFilme {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 81px;
 }
 
-.inputFilme
-{
+.inputFilme {
     display: block;
     width: 400px;
     height: 58px;
@@ -52,8 +47,7 @@ select
     padding: 5px 0px 0px 24px;
 }
 
-.btnFilme
-{
+.btnFilme {
     width: 180px;
     height: 58px;
     background-color: #F6511D;
@@ -63,40 +57,34 @@ select
     cursor: pointer;
 }
 
-.btnFilme:hover
-{
+.btnFilme:hover {
     color: black;
 }
 
-.cardFilmes
-{
+.cardFilmes {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
 
-.alinhamentoFilme
-{
+.alinhamentoFilme {
     width: 320px;
     flex-direction: column;
 }
-.txtPaddingFilme
-{
+
+.txtPaddingFilme {
     padding-top: 45px;
 }
 
-.txtPaddingFilme2
-{
-    padding-bottom: 9px ;
+.txtPaddingFilme2 {
+    padding-bottom: 9px;
 }
 
-.alinhamentoBtnCard
-{
+.alinhamentoBtnCard {
     margin-top: 40px;
 }
 
-.btnEditarFilmes
-{
+.btnEditarFilmes {
     background: #F6511D;
     border: 2px solid #F6511D;
     box-sizing: border-box;
@@ -109,13 +97,11 @@ select
     cursor: pointer;
 }
 
-.btnEditarFilmes:hover
-{
+.btnEditarFilmes:hover {
     color: black;
 }
 
-.btnExcluirFilmes
-{
+.btnExcluirFilmes {
     background: #41B8D2;
     border: 2px solid #41B8D2;
     box-sizing: border-box;
@@ -126,20 +112,18 @@ select
     cursor: pointer;
 }
 
-.btnExcluirFilmes:hover
-{
+.btnExcluirFilmes:hover {
     color: white;
 }
 
 /* css Modal */
 
-.corFundoModalFilmes
-{
+.corFundoModalFilmes {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     right: 0;
-    left: 0; 
+    left: 0;
     top: 0;
     bottom: 0;
     position: fixed;

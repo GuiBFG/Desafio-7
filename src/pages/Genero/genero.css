@@ -1,35 +1,30 @@
 @import "../../index.css";
 
-.tituloGenero
-{
+.tituloGenero {
     margin-top: 32px;
     margin-bottom: 13px;
     font-size: 24px;
     text-align: center;
 }
 
-.logoGenero
-{
+.logoGenero {
     display: flex;
     margin: auto;
     margin-bottom: 31.5px;
 }
 
-.labelGenero
-{
+.labelGenero {
     margin-top: 31.5px;
 }
 
-.cadastroGenero
-{
+.cadastroGenero {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 59px;
 }
 
-.inputGenero
-{
+.inputGenero {
     display: block;
     width: 400px;
     height: 58px;
@@ -38,8 +33,7 @@
     padding: 5px 0px 0px 24px;
 }
 
-.btnGenero
-{
+.btnGenero {
     width: 180px;
     height: 58px;
     background-color: #F6511D;
@@ -49,32 +43,27 @@
     cursor: pointer;
 }
 
-.btnGenero:hover
-{
+.btnGenero:hover {
     color: black;
 }
 
-.cardGenero
-{
+.cardGenero {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     color: #4B2142;
 }
 
-.alinhamentoBtnGenero
-{
+.alinhamentoBtnGenero {
     margin-top: -4px;
 }
 
 
-.alinhamentoBtnGenero2
-{
+.alinhamentoBtnGenero2 {
     margin-top: 34px;
 }
 
-.txtGenero
-{
+.txtGenero {
     display: flex;
     align-items: center;
     margin-top: 30px;

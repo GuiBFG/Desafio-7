@@ -1,19 +1,15 @@
 import React from "react";
-
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-
 import imgFilmes from "../../assets/img/cinema 1.png"
 import imgCategoria from "../../assets/img/theater.png"
-
 import "./home.css"
 
 let headerHome = {
     descricao: "Conheça nossa coletânea"
 }
 
-const Home = () => 
-{
+const Home = () => {
 
     return (
 

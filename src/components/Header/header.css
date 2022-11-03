@@ -1,8 +1,7 @@
 @import "../../index.css";
 
 
-h1
-{
+h1 {
     font-weight: 400;
     font-size: 25px;
     color: #000000
@@ -10,84 +9,72 @@ h1
 
 /* classes */
 
-.textoHeader
-{
+.textoHeader {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.header
-{
+.header {
     background-color: #9BD2DE;
     display: flex;
     height: 200px;
     align-items: center;
 }
 
-.alinhamentoHeader
-{
+.alinhamentoHeader {
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 1050px;
 }
 
-.logoHeader
-{
+.logoHeader {
     display: flex;
     flex-direction: column;
     font-size: 25px;
 }
 
-.imgHeader
-{
+.imgHeader {
     width: 150px;
     margin-top: 50px;
     margin-bottom: 10px;
 }
 
-.descricao
-{
+.descricao {
     font-size: 25px
 }
 
-.subdescricao
-{
+.subdescricao {
     font-size: 22px;
 }
 
-.tituloLogo
-{
+.tituloLogo {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 30px;
     color: #616162;
 }
 
-.subtituloLogo
-{
+.subtituloLogo {
     font-family: 'Rosarivo', serif;
     font-weight: 400;
     font-size: 18px;
     color: #686666;
 }
 
-.navegar
-{
-  display: flex;
-  align-items: center;
-  
+.navegar {
+    display: flex;
+    align-items: center;
+
 }
 
-.btnHeader
-{
+.btnHeader {
     background-color: transparent;
     border: none;
 }
 
-.links
-{
+.links {
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;

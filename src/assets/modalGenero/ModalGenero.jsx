@@ -1,32 +1,31 @@
 import React, { useState } from "react";
 import './ModalGenero.css';
 import { apiFilmes } from "../../services/api";
+import Botão from '../../components/Botão/botão'
 
 const ModalGenero = (props) => {
 
     const [nomeGenero, setNomeGenero] = useState('');
-    const [show , setNomeShow] = useState (false)
+    const [show, setNomeShow] = useState(false)
 
     const EditarGenero = (id) => {
 
-        if(nomeGenero !== '') {
+        if (nomeGenero !== '') {
 
             apiFilmes.put(`Genero/${id}`, { valorGenero: nomeGenero })
 
-            .then(() => {
-                window.location.reload()
-            })
+                .then(() => {
+                    window.location.reload()
+                })
         }
 
-        else{
+        else {
             setNomeShow(true)
         }
 
-        
-
     }
-    
-    return(
+
+    return (
 
         <div className="alinhamentoModalGenero">
             <div className={"corFundoGenero " + props.mostrar}>
@@ -36,7 +35,7 @@ const ModalGenero = (props) => {
 
                 <div className="alinhamentoExcluirModalGenero">
 
-                    <button className="excluirModalGenero" onClick={props.funcao}>X</button>
+                    <Botão class={"excluirModalGenero"} action={props.funcao}>X</Botão>
 
                 </div>
 
@@ -46,16 +45,16 @@ const ModalGenero = (props) => {
 
                     <div className="AlinhamentoInputModal">
 
-                        <input 
-                        type="text" 
-                        placeholder="Gênero" 
-                        className="inputModalGenero" 
-                        defaultValue={nomeGenero}
-                        onChange={(e) => setNomeGenero(e.target.value)}/>
+                        <input
+                            type="text"
+                            placeholder="Gênero"
+                            className="inputModalGenero"
+                            defaultValue={nomeGenero}
+                            onChange={(e) => setNomeGenero(e.target.value)} />
 
 
                         <div className="AlinhamentoModalSalvar">
-                            <button className="btnSalvarModalGenero" onClick={() => EditarGenero(props.id)}>Salvar</button>
+                            <Botão class={"btnSalvarModalGenero"} action={() => EditarGenero(props.id)}>Salvar</Botão>
                         </div>
 
                     </div>

@@ -1,28 +1,28 @@
-@import "../../index.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import '../../index.css';
 
-.modalFilmes {
+.EditModal {
     width: 900px;
     height: 449px;
     background: #fff;
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
-    top: 31.4vh;
+    top: 175px;
     z-index: 10;
-    right: 33vh;
 }
 
-.alinhamentoExcluirModalFilmes {
+.alinhamentoExcluirModal {
     width: 900px;
-    height: 45px;
-    background: #9BD2DE;
+    height: 10px;
+    background: #101010;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 30px 20px 20px;
 }
 
-.excluirModalFilmes {
+.excluirModal {
     background: transparent;
     border-radius: 10px;
     color: #FFFFFF;
@@ -31,72 +31,57 @@
     cursor: pointer;
 }
 
-.excluirModalFilmes:hover {
-    color: #000000
-}
-
-.cardTxtFilmes {
-    margin-bottom: 4.19vw;
-}
-
-.cardTxtFilmes h1 {
+.cardTxt h1 {
     font-size: 40px;
+    font-family: 'Inter';
     color: #000;
-    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4vw;
 }
 
-.AlinhamentoInputModalFilmes {
+.AlinhamentoInputModal {
     display: flex;
-    margin-top: 42px;
+    flex-direction: column;
 }
 
-.inputModalFilmes {
+.inputModal {
     height: 49px;
     font-size: 20px;
+    margin-top: 10px;
     padding: 5px 0px 0px 24px;
 }
 
-.selectModalFilmes {
+.selectModal {
     width: 271px;
     height: 49px;
     margin-left: 20px;
 }
 
-.AlinhamentoModalFilmesSalvar {
-    margin-left: 20px;
+.AlinhamentoModalSalvar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
 
-.btnSalvarModalFilmes {
+.btnSalvarModal {
     width: 120px;
     height: 49px;
-    background-color: #F6511D;
+    background-color: #8458FF;
     font-size: 20px;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-.btnSalvarModalFilmes:hover {
+.btnSalvarModal:hover {
     color: #000000;
 }
 
-.footerModalFilmes {
-    width: 900px;
-    background: #F6511D;
-}
-
-/* Aviso */
-
-.vermelhoModalFilme {
+.vermelho {
     color: red;
-    text-align: center;
 }
-
-/* Mostrar/Esconder */
 
 .show {
     display: flex;

@@ -1,15 +1,13 @@
 @import "../../index.css";
 
 
-.alinhamentoModalGenero 
-{
+.alinhamentoModalGenero {
     display: flex;
     justify-content: center;
     background-color: white;
 }
 
-.corFundoGenero 
-{
+.corFundoGenero {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -18,8 +16,7 @@
     opacity: 0.85;
 }
 
-.modalGenero 
-{
+.modalGenero {
     width: 900px;
     height: 449px;
     background: #fff;
@@ -29,8 +26,7 @@
     top: 31.4vh;
 }
 
-.alinhamentoExcluirModalGenero 
-{
+.alinhamentoExcluirModalGenero {
     width: 900px;
     height: 45px;
     background: #9BD2DE;
@@ -40,8 +36,7 @@
     padding: 20px 30px 20px 20px;
 }
 
-.excluirModalGenero 
-{
+.excluirModalGenero {
     background: transparent;
     border-radius: 10px;
     color: #FFFFFF;
@@ -50,18 +45,15 @@
     cursor: pointer;
 }
 
-.excluirModalGenero:hover 
-{
+.excluirModalGenero:hover {
     color: #000000
 }
 
-.cardTxtGenero
-{
+.cardTxtGenero {
     margin-bottom: 4.19vw;
 }
 
-.cardTxtGenero h1 
-{
+.cardTxtGenero h1 {
     font-size: 40px;
     color: #000;
     width: 450px;
@@ -72,27 +64,23 @@
     margin-top: 4vw;
 }
 
-.AlinhamentoInputModal 
-{
+.AlinhamentoInputModal {
     display: flex;
     margin-top: 42px;
 }
 
-.inputModalGenero 
-{
-    
+.inputModalGenero {
+
     height: 49px;
     font-size: 20px;
     padding: 5px 0px 0px 24px;
 }
 
-.AlinhamentoModalSalvar
-{
+.AlinhamentoModalSalvar {
     margin-left: 20px;
 }
 
-.btnSalvarModalGenero
-{
+.btnSalvarModalGenero {
     width: 120px;
     height: 49px;
     background-color: #F6511D;
@@ -102,32 +90,27 @@
     cursor: pointer;
 }
 
-.btnSalvarModalGenero:hover
-{
+.btnSalvarModalGenero:hover {
     color: #000000;
 }
 
-.footerModalGenero 
-{
+.footerModalGenero {
     width: 900px;
     background: #F6511D;
 }
 
 /* Aviso */
 
-.vermelhoModalGenero
-{
+.vermelhoModalGenero {
     color: red;
 }
 
 /* Mostrar/Esconder */
 
-.show 
-{
+.show {
     display: flex;
 }
 
-.hide 
-{
+.hide {
     display: none;
 }

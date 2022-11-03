@@ -1,75 +1,63 @@
 @import "../../index.css";
 
 
-main
-{
+main {
     max-width: 1050px;
     margin: auto;
 }
 
 /* Classes */
 
-.tituloH1
-{
+.tituloH1 {
     margin-top: 36px;
     margin-bottom: 58px;
     font-size: 36px;
     text-align: center;
 }
 
-.alinhamentoTexto
-{
+.alinhamentoTexto {
     text-align: left;
 }
 
-.textoHome
-{
+.textoHome {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.textoHome2
-{
+.textoHome2 {
     font-size: 14px;
     margin-bottom: 85px;
 }
 
-.alinhamentoCardFilme
-{
+.alinhamentoCardFilme {
     display: flex;
     justify-content: space-between;
 }
 
-.textoFilme
-{
+.textoFilme {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.textoFilme2
-{
+.textoFilme2 {
     font-size: 14px;
     width: 400px;
 }
 
-.imgHomeFilme
-{
+.imgHomeFilme {
     margin-bottom: 17px;
 }
 
-.textoCategoria
-{
+.textoCategoria {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.textoCategoria2
-{
+.textoCategoria2 {
     font-size: 14px;
     width: 400px;
 }
 
-.imgHomeCategoria
-{
+.imgHomeCategoria {
     margin-bottom: 16.65px;
 }

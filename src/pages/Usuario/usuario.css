@@ -1,30 +1,26 @@
 @import "../../index.css";
 
 
-label   
-{
+label {
     font-size: 20px;
     color: #4B2142;
 }
 
 /* classes */
 
-.tituloUsuario
-{
+.tituloUsuario {
     margin-top: 15px;
     margin-bottom: 26px;
     font-size: 24px;
     text-align: center;
 }
 
-.cadastrar
-{
+.cadastrar {
     display: flex;
     justify-content: space-between;
 }
 
-.inputUsuario
-{
+.inputUsuario {
     display: block;
     width: 320px;
     height: 58px;
@@ -33,8 +29,7 @@ label
     padding-left: 10px;
 }
 
-.btnUsuario
-{
+.btnUsuario {
     margin-top: 35px;
     background-color: #F6511D;
     width: 180px;
@@ -47,43 +42,36 @@ label
     cursor: pointer;
 }
 
-.btnUsuario:hover
-{
+.btnUsuario:hover {
     color: black;
 }
 
-.cardUsuario
-{
+.cardUsuario {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
 
-.txtColor
-{
+.txtColor {
     color: #4B2142;
 }
 
-.txtPadding
-{
+.txtPadding {
     padding-top: 45px;
     padding-bottom: 45px;
 }
 
-.alinhamentoUsuario
-{
+.alinhamentoUsuario {
     flex-direction: column;
     width: 160px;
     padding-left: 75px;
 }
 
-.alinhamentoBtnUsuario
-{
+.alinhamentoBtnUsuario {
     margin-top: -4px;
 }
 
-.btnEditar
-{
+.btnEditar {
     background: #F6511D;
     border: 2px solid #F6511D;
     box-sizing: border-box;
@@ -96,13 +84,11 @@ label
     cursor: pointer;
 }
 
-.btnEditar:hover
-{
+.btnEditar:hover {
     color: black;
 }
 
-.btnExcluir
-{
+.btnExcluir {
     background: #41B8D2;
     border: 2px solid #41B8D2;
     box-sizing: border-box;
@@ -113,17 +99,14 @@ label
     cursor: pointer;
 }
 
-.btnExcluir:hover
-{
+.btnExcluir:hover {
     color: white;
 }
 
-.btnPadding
-{
+.btnPadding {
     margin-top: 33px;
 }
 
-.alinhamentoBtnUsuario2
-{
+.alinhamentoBtnUsuario2 {
     margin-top: 34px;
 }
