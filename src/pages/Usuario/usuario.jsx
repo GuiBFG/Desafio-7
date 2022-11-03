@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/footer";
 import "./usuario.css";
 import { apiFilmes } from "../../services/api";
 import Botão from '../../components/Botão/botão'
+import Swal from 'sweetalert2'
 import ModalUsuario from "../../assets/ModalUsuario/ModalUsuario";
 
 let headerUsuario = {
@@ -43,6 +44,14 @@ const Usuario = () => {
         if (nomeUsuario !== '' && email !== '' && telefone !== '') {
             apiFilmes.post(`Usuarios`, { nome: nomeUsuario, email: email, telefone: telefone })
                 .then(() => { window.location.reload() })
+        }
+        else {
+            Swal.fire({
+                title: 'Preencha o campo vazio antes!',
+                icon: 'warning',
+                confirmButtonColor: '#41B8D2',
+                confirmButtonText: 'OK'
+            })
         }
     }
 
